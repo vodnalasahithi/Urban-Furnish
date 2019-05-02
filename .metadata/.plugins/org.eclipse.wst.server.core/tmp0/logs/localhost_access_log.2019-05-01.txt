@@ -1,0 +1,15 @@
+127.0.0.1 - - [01/May/2019:12:33:28 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:33:33 +0530] "GET /Mini_Project_Uf/Home.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:33:59 +0530] "GET /Mini_Project_Uf/Home.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:34:05 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:34:30 +0530] "GET /Mini_Project_Uf/adminlogin.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:34:55 +0530] "GET /Mini_Project_Uf/adminlogin.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:20 +0530] "POST /Mini_Project_Uf/login HTTP/1.1" 200 17309
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:27 +0530] "GET /Mini_Project_Uf/samplecodeimage.jsp HTTP/1.1" 200 9945
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:28 +0530] "GET /Mini_Project_Uf/readImage.jsp?ProductId=18 HTTP/1.1" 200 23839
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:28 +0530] "GET /Mini_Project_Uf/readImage.jsp?ProductId=17 HTTP/1.1" 200 37038
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:28 +0530] "GET /Mini_Project_Uf/readImage.jsp?ProductId=2 HTTP/1.1" 200 37038
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:28 +0530] "GET /Mini_Project_Uf/readImage.jsp?ProductId=3 HTTP/1.1" 200 63232
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:28 +0530] "GET /Mini_Project_Uf/readImage.jsp?ProductId=1 HTTP/1.1" 200 55091
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:45 +0530] "POST /Mini_Project_Uf/admin HTTP/1.1" 200 18453
+0:0:0:0:0:0:0:1 - - [01/May/2019:12:35:52 +0530] "GET /Mini_Project_Uf/vieworders.jsp HTTP/1.1" 200 10114

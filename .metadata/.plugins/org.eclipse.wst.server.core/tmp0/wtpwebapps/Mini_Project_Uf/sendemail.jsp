@@ -1,0 +1,87 @@
+<%@ page import = "java.io.*,java.util.*,javax.mail.*"%>
+<%@ page import = "javax.mail.internet.*,javax.activation.*"%>
+<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
+
+<%
+	String userEmailAddress = (String)request.getParameter("email");
+   String result;
+   
+   // Recipient's email ID needs to be mentioned.
+   //String to = "vodnalasahithi66@gmail.com,sahithivodnala66@gmail.com";
+   
+
+   // Sender's email ID needs to be mentioned
+   final String from = "urbanfurnish123@gmail.com";
+   final String password = "urban_furnish"; 
+   
+   //you can try providing correct user / password and try again
+   
+
+   // Assuming you are sending email from localhost
+   //String host = "smtp.gmail.com";
+
+   // Get system properties object
+   Properties properties = System.getProperties();
+
+   // Setup mail server
+   //properties.setProperty("mail.smtp.host", host);
+   
+   properties.setProperty("mail.smtp.host", "smtp.gmail.com");    
+   properties.setProperty("mail.smtp.socketFactory.port", "465");    
+   properties.setProperty("mail.smtp.socketFactory.class",    
+             "javax.net.ssl.SSLSocketFactory");    
+   properties.setProperty("mail.smtp.auth", "true");    
+   properties.setProperty("mail.smtp.port", "465");    
+   
+   
+   Session mailSession = Session.getInstance(properties,
+	  new javax.mail.Authenticator() {
+		protected PasswordAuthentication getPasswordAuthentication() {
+			return new PasswordAuthentication(from, password);
+		}
+	  });
+
+	try {
+		
+		//String product_name = (String)request.getParameter("productname");
+		
+		
+
+		Message message = new MimeMessage(mailSession);
+		message.setFrom(new InternetAddress("urbanfurnish123@gmail.com"));
+		message.setRecipients(Message.RecipientType.TO,
+			InternetAddress.parse(userEmailAddress));
+		message.setSubject("Urban Furnish");
+		message.setText("Dear Customer," + "\n\n Your Order has been Confirmed, Thank You!"+"\n\n Your Order will be delivered to you within 7-15 days  and do ensure you collect the bill and pay the  amount by hand cash." );
+		Transport.send(message);
+
+		
+
+	} catch (MessagingException e) {
+		throw new RuntimeException(e);
+	}
+
+   
+
+   
+%>
+<jsp:forward page="samplecodeimage.jsp">
+    <jsp:param name="emailStatus" value="Success"/>
+</jsp:forward>
+<html>
+   <head>
+      <title>Send Email using JSP</title>
+   </head>
+   
+   <body>
+      <center>
+         <h1>Send Email using JSP</h1>
+      </center>
+      
+      <p align = "center">
+         <% 
+            //out.println("Result: " + result + "\n");
+         %>
+      </p>
+   </body>
+</html>
