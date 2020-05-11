@@ -5,10 +5,10 @@ Its a  web application which helps people to select and buy furniture the one wh
 Database System
 * [MySql Connector](https://dev.mysql.com/downloads/connector/j/5.1.html) - The database used
 ### Java
-Back-End framework
+Back-End 
 
 ### HTML5, CSS, Bootstrap
-Front-End Framework
+Front-End 
 
 ### Apache Tomcat 8.0
 Server
